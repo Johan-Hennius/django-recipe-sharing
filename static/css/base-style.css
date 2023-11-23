@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+:root {
+    /** Fonts **/
+    --f-primary: 'Lora', serif;
+    --f-secondary: 'Jakarta', sans-serif;
+
+    /** Colours **/
+    --background: #f1f1f1;
+    --black: #000;
+    --pink: #dd7191;
+
+    /** Utility **/
+    --border: 2px solid var(--black);
+}
+
+/** General **/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--f-secondary);
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--f-primary);
+}
+
+/** Header **/
+.navbar {
+    background-color: var(--background);
+    border-bottom: var(--border);
+}
+
+a.nav-link {
+    color: var(--black);
+}
+
+.logo {
+    width: 3rem;
+}
+
+.search__bar,
+.search__button {
+    border: var(--border);
+}
+
+/** Footer **/
+footer {
+    border-top: var(--border);
+}
+
+.footer__links {
+    font-family: var(--f-secondary);
+    text-decoration: none;
+    color: var(--black);    
+}
