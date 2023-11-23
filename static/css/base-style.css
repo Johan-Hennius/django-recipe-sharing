@@ -3,7 +3,7 @@
 :root {
     /** Fonts **/
     --f-primary: 'Lora', serif;
-    --f-secondary: 'Jakarta', sans-serif;
+    --f-secondary: 'Plus Jakarta Sans', sans-serif;
 
     /** Colours **/
     --background: #f1f1f1;
@@ -38,6 +38,12 @@ h4,
 h5,
 h6 {
     font-family: var(--f-primary);
+    font-weight: 700;
+}
+
+.active {
+    color: var(--pink);
+    border-bottom: var(--border);
 }
 
 /** Header **/
@@ -55,7 +61,8 @@ a.nav-link {
 }
 
 .search__bar,
-.search__button {
+.search__button,
+.form__button {
     border: var(--border);
 }
 
@@ -69,3 +76,11 @@ footer {
     text-decoration: none;
     color: var(--black);    
 }
+
+/** Forms **/
+.form {
+    width: 100%;
+    margin: 3% auto;
+    border: var(--border);
+}
+
