@@ -84,3 +84,16 @@ footer {
     border: var(--border);
 }
 
+/** Recipes **/
+.card {
+    height: 80%;
+    margin-top: 2rem;
+}
+
+.recipes {
+    text-decoration: none;
+}
+
+.recipes:hover {
+    cursor: pointer;
+}
