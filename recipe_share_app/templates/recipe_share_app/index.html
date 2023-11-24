@@ -1,1 +1,30 @@
 {% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row my-5">
+        <div class="col-8 mx-auto">
+            <h1 class="text-center">Discover Food</h1>
+            <p class="py-4 text-center">
+                If you haven't eaten food yet, you're gonna love this.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 mx-auto">
+            {% for recipe in recipes %}
+            <div class="d-flex flex-column justify-content-between align-items-center">
+                <a href="{% url 'recipe_detail' recipe.id %}" class="img-container d-flex flex-column justify-content-between align-items-center">
+                    <img src="{{ recipe.image.url }}" alt="{{ recipe.image_alt}}" class="w-50 img fluid text-center">
+                    <div class="text-center">
+                        <h2>{{ recipe.title }}</h2>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
