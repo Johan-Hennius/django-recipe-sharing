@@ -32,8 +32,8 @@
             </div>
             {% if request.user == recipe.user %}
                 <div class="my-2 d-flex justify-content-center align-items-center gap-5 w-100">
-                    <a href=""><button class="btn btn-outline-dark w-auto text-center">Edit</button></a>
-                    <a href=""><button class="btn btn-outline-danger w-auto text-center">Delete</button></a>
+                    <a href="{% url 'edit_recipe' recipe.id %}"><button class="btn btn-outline-dark w-auto text-center">Edit</button></a>
+                    <a href="{% url 'delete_recipe' recipe.id %}"><button class="btn btn-outline-danger w-auto text-center">Delete</button></a>
                 </div>
             {% endif %}
         </div>
